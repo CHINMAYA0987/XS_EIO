@@ -17,13 +17,15 @@
 
 ## Headline result
 
-> After fixing a Ceres-version-related solver convergence bug, this reproduction reaches **0.32% Mean Position Error** on `boxes_translation` — against the paper's own **0.63%** for that sequence.
+> After fixing a Ceres-version-related solver convergence bug, this reproduction reaches **0.32% Mean Position Error** on `boxes_translation` — against the paper's own **0.63%** for that sequence. The issue we faced while recording the original trajectory was the original repo used ROS1 and its native support, while we did all in ROS2 (main focus was on running the repo, visualization was not in the priority list).
 
 | Run | Mean Position Error |
 |---|---:|
 | Paper (`boxes_translation`) | 0.63% |
 | **This reproduction — after fix** | **0.32%** |
 | This reproduction — before fix | 56.4% |
+
+https://github.com/user-attachments/assets/026df61f-fab6-4271-9d55-4a827e0967cf
 
 ---
 
